@@ -45,7 +45,6 @@ function letsTrain(){
 
 async function trainData(){
     for(i = 0 ; i < 1000 ; i++){
-        console.log(i);
         var r = Math.floor(Math.random() * 4);
         const response = await model.fit(training_data[r].inputs, training_data[r].output, {
             epochs: 10,

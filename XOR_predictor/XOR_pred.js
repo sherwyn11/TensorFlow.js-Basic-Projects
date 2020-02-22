@@ -26,7 +26,7 @@ function setup(){
     model.add(tf.layers.dense({
         units: 4,
         inputShape: [2],
-        activation: 'sigmoid'
+        activation: 'relu'
     }));
     model.add(tf.layers.dense({
         units: 1,
